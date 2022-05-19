@@ -22,11 +22,11 @@
         <div class="container">
             <h3>Completa el siguiente formulario:</h3>
            <label for="exampleFormControlSelect1">Nota de Matematica:</label>
-           <input class="form-control form-control-sm" type="number" placeholder="Nota Matematica" id="notamate" onchange="validarNota()">
+           <input class="form-control form-control-sm" type="text" placeholder="Nota Matematica" required id="notamate" onkeyup="validarNota(document.getElementById('notamate').value, 'notamate')">
            <input type="button" value="Button">
-           <input class="form-control form-control-sm" type="number" placeholder="Nota Matematica" id="notamate" onchange="validarNota()">
+           <input class="form-control form-control-sm" type="text" placeholder="Nota Matematica" required id="notalengua" onkeyup="validarNota(document.getElementById('notalengua').value, 'notalengua')">
            <label for="exampleFormControlSelect1">Nota de Lengua:</label>
-           <input class="form-control form-control-sm" type="number" placeholder="Nota Matematica" id="notamate" onchange="validarNota()">
+           <input class="form-control form-control-sm" type="text" placeholder="Nota Matematica" required id="notaefsi" onkeyup="validarNota(document.getElementById('notaefsi').value, 'notaefsi')">
            <label for="exampleFormControlSelect1">Nota de  Efsi:</label>
            
         </div>    
@@ -36,6 +36,8 @@
         <button type="button" class="btn btn-primary">Materia con Mayor Nota</button>
         <button type="button" class="btn btn-success">Hacer Promedio</button>    
     </div>
-   
+
+
+  
 </body>
 </html>
